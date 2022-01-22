@@ -1,0 +1,42 @@
+###
+GET  http://localhost:3000/api/products
+###
+POST  http://localhost:3000/api/products
+content-type: application/json
+Authorization: x-access-token "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWI0ZTgyODc5NTM5NTU0M2NhNGFiMCIsImlhdCI6MTY0MjgxNjc3MCwiZXhwIjoxNjQyOTAzMTcwfQ.Slnrh9_Da5ZNhqcsM8p_HN28aTnmWMlqxmG8sAUY5GQ"
+
+{
+    "name": "Pc GAMERs",
+    "category": "Computador",
+    "price": 100.99,
+    "imgURL": "prueba 3 url"
+}
+###
+GET  http://localhost:3000/api/products/61b4c443fa43f30927d84d30
+###
+DELETE  http://localhost:3000/api/products/
+###
+PUT  http://localhost:3000/api/products/61b4c5885c41ecdaddb7d595
+content-type: application/json
+
+{
+    "name": "Computador Escritorio"
+}
+###
+POST  http://localhost:3000/api/auth/signup
+content-type: application/json
+
+{
+    "username": "Camilo" ,
+    "email": "camilo@gmail.com",
+    "password": "camilo123",
+    "roles": ["admin","moderator"]
+}
+###
+POST  http://localhost:3000/api/auth/signin
+content-type: application/json
+
+{
+   "email": "david@gmail.com",
+    "password": "David123"
+}
